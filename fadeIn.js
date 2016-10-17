@@ -1,1 +1,0 @@
-$(document).ready(function(){function e(){n.fadeIn(2e3).delay(2500).fadeOut(2e3,function(){e()}).html(c[t++]),t==c.length&&(t=0)}var n=$(".collective-banner").hide(),c=$(".collective-banner").children(),t=0;e()});
