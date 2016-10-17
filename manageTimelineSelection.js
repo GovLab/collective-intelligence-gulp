@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=new Date($.now()).toISOString().slice(0,10),t=$(".e-event").find("time");t.each(function(){var t=$(this).attr("datetime");t>=e&&$(".e-event").addClass("m-current")})});
