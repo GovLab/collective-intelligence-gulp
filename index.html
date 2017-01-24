@@ -311,6 +311,17 @@
         </div>
       </div>
   </main>
+  <div id="sticky-code">
+      <div class="sticky js-target-sticky js-active">
+          <div class="row">
+              <div class="column small-12">
+                  <i class="material-icons sticky__close js-close-sticky">close</i>
+                  <h3 class="sticky__title">Deadline for submission of abstracts, February 1, 2017!</h3>
+                  <p>To submit an abstract, <a href="http://collectiveintelligenceconference.org/submissions.html"><em>click here</em></a>.</p>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
 
@@ -340,6 +351,7 @@
         <script src="../scripts/manageTimelineSelection.js"></script>
 
         <script>
+
         // Styleguide Guide specific functions
         $(document).ready(function () {
             $('.language-markup').each(function () {
@@ -353,11 +365,22 @@
                 $('#overlay').addClass('js-active');
             });
 
+            $('.js-close-sticky').click(function () {
+                $('.js-target-sticky').removeClass('js-active');
+                sessionStorage.setItem('closed', 'true');
+            });
+
+            if (!sessionStorage.getItem("closed")) {
+                $('#sticky-code').css( "display", "block");
+            }
+
             // General Click Behavior for Overlay
             $('#overlay').click(function () {
                 $('.js-active').removeClass('js-active');
                 $('.js-active-menu').removeClass('js-active-menu');
             });
+
+
         }); // doc.ready
         </script>
     </body>
