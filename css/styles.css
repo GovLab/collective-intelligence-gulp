@@ -48,6 +48,10 @@
     margin: 0;
     margin-top: -20px;
     font-size: 3.3rem; }
+  .top-section--main-color .title-details {
+    margin: 20px 0; }
+    .top-section--main-color .title-details h3 {
+      margin: 0; }
 
 @media (max-width: 64em) {
   .top-section {
