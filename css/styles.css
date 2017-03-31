@@ -44,10 +44,16 @@
   .top-section--main-color .title-top {
     margin-bottom: 0;
     font-size: 4.5rem; }
+    @media (max-width: 39.9375em) {
+      .top-section--main-color .title-top {
+        font-size: 4.3rem; } }
   .top-section--main-color .title-bottom {
     margin: 0;
     margin-top: -20px;
     font-size: 3.3rem; }
+    @media (max-width: 39.9375em) {
+      .top-section--main-color .title-bottom {
+        font-size: 3.1rem; } }
   .top-section--main-color .title-details {
     margin: 20px 0; }
     .top-section--main-color .title-details h3 {
@@ -357,9 +363,11 @@ time {
     bottom: 50px; }
     @media (max-width: 39.9375em) {
       .footer__icons {
-        position: relative;
+        position: absolute;
         left: 20px;
-        top: 170px; } }
+        top: 230px;
+        margin: 0;
+        padding: 0; } }
   .footer__partner-logo {
     color: white;
     display: inline; }
@@ -480,7 +488,7 @@ time {
   font-size: 18px; }
   @media (max-width: 39.9375em) {
     .speaker__bio p {
-      text-align: justify; } }
+      text-align: left; } }
 .speaker__bio a {
   color: #191b3f;
   font-weight: 600;
