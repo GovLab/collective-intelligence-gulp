@@ -398,7 +398,7 @@ time {
   box-sizing: border-box;
   padding-bottom: 0; }
   .program-table__item--details.js-active {
-    max-height: 900px; }
+    max-height: 100%; }
 .program-table__item--title {
   font-weight: 600;
   text-transform: uppercase; }
