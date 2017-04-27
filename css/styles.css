@@ -499,3 +499,10 @@ time {
 
 .speakers-header {
   padding-bottom: 30px; }
+
+.speakers-list {
+  padding: 30px 0px; }
+  .speakers-list ul {
+    padding-left: 0px; }
+    .speakers-list ul li {
+      margin-bottom: 10px; }
