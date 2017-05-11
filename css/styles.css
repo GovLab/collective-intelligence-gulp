@@ -41,6 +41,18 @@
     margin-top: 20px; }
   .top-section--main-color h1 {
     text-transform: uppercase; }
+  .top-section--main-color .title-img {
+    margin-bottom: 40px;
+    fill: #ffd300; }
+    @media (max-width: 39.9375em) {
+      .top-section--main-color .title-img {
+        max-width: 90%; } }
+    @media (min-width: 40em) {
+      .top-section--main-color .title-img {
+        max-width: 80%; } }
+    @media (min-width: 64em) {
+      .top-section--main-color .title-img {
+        max-width: 320px; } }
   .top-section--main-color .title-top {
     margin-bottom: 0;
     font-size: 4.5rem; }
